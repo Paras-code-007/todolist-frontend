@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDolist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Todolist</h1>
+    <section class="main">
+        <div class="fnbox">
+            <div class="inp">
+                <label id="inphead" for="inpbox">New Task</label>
+                <input type="text" id="inpbox" placeholder="Enter the name of the task">
+                <small class="subtext">a short one line description of your task</small>
+            </div>
+            <div class="btnall">
+                <div class="row" id="row1">
+                    <button class="btn" id="add">add</button>
+                    <button class="btn" id="reset">reset</button>
+                </div>
+                <div>
+                    <button class="btn active" id="sort">sort</button>
+                    <button class="btn active" id="cleanup">cleanup</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul id="list">
+                <li>Your task will be displayed here</li>
+                <li>task1</li>
+                <li>task2</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@media(min-width: 415px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    
+    h1{
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 8px;
+    }
+    
+    .fnbox{
+        display: flex;
+        margin: auto; 
+        width: 80%;
+        margin-top: 29px;
+    }
+    
+    .inp{
+        display: flex;
+        flex-direction: column;
+        width: 57%;
+        margin-right: 29px;
+    }
+    
+    
+    #inphead{
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    #inpbox{
+        width: 99%;
+        height: 34px;
+        font-size: 18px;
+        border: solid gray 2px;
+        border-radius: 7px;
+        margin-bottom: 5px;
+        font-weight: 550;
+        padding: 1px 7px;
+    }
+    .subtext{
+        color: gray;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    
+    .btnall{
+        width: 43%;
+    }
+    
+    .row{
+        margin-bottom: 8px;
+    }
+    .btn{
+        width: 48%;
+        height: 44px;
+        font-size: 20px;
+        margin: 0px 2px;
+        text-transform: capitalize;
+        border-radius: 5px;
+        color: white;
+    
+    }
+    
+}
+
+#add{
+    background-color: #6dba81;
+    border: solid #6DBA81 2px;
+}
+#reset{
+    background-color: #F08686;
+    border: solid #F08686 2px;
+
+}
+#sort{
+    background-color: #1597BC;
+    border: solid #1597BC 2px;
+
+}
+#cleanup{
+    background-color: #FEBC00;    
+    border: solid #FEBC00 2px;
+
+}
+
+
+
+#list{
+    width: 78%;
+    margin: auto;
+    list-style: none;
+    border: solid gray 2px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#list li{
+    border-bottom: solid gray 2px;
+    padding: 10px;
+}
+
+
+
+#add.active{
+    background-color: #24943C;
+    border: solid #24943C 2px;
+    transition: all 0.3s;
+}
+#reset.active{
+    background-color: #E94643;
+    border: solid #E94643 2px;
+    transition: all 0.3s;
+}
+#sort.active{
+    background-color: #1387A9;
+    border: solid #1387A9 2px;
+    transition: all 0.3s;
+}
+#cleanup.active{
+    background-color: #E5A400;    
+    border: solid #E5A400 2px;
+    transition: all 0.3s;
+}
+
+.strike{
+    text-decoration-line: line-through;
+    color: #6E777D;
+}

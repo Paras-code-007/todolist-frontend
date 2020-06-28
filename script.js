@@ -16,6 +16,7 @@ $(function () {
     
     reset.click(function () {
         input.val("")
+        lightwhenadded()
     })
     
     let alllielements = $('#list li')
@@ -31,6 +32,9 @@ $(function () {
 
     function delitems(event) {
         event.target.remove()
+        if($('#list li').length==0){
+            lightsortcleanelement()
+        }
     }
    
     add.click(additem);
@@ -48,6 +52,10 @@ $(function () {
                 sampletext = false;
             }
             lightwhenadded()
+            if($('#list li').length==0){
+                sort[0].classList.add('active')
+                cleanup[0].classList.add('active')
+            }
             let inputtext = input.val()
             let element = $(`<li>${inputtext}</li>`)
             list.prepend(element)
@@ -59,10 +67,6 @@ $(function () {
                 }
             }
             $('#list li').dblclick(delitems)
-
-            function delitems(event) {
-                event.target.remove()
-            }
         }
     }
     
@@ -99,6 +103,11 @@ $(function () {
     input[0].oninput = function () {
         add[0].classList.add('active')
         reset[0].classList.add('active')
+    }
+
+    function lightsortcleanelement() {
+        sort[0].classList.remove('active')//because already dark
+        cleanup[0].classList.remove('active')
     }
 
 
